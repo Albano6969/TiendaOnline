@@ -1,0 +1,105 @@
+.btn-filtrar {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: #4b8eda; /* Color principal, igual que "Agregar al Carrito" */
+    color: white; /* Texto en blanco */
+    border: none; /* Sin borde */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para efectos */
+}
+
+.btn-filtrar:hover {
+    background-color: #3772ff; /* Un tono más claro al pasar el mouse, igual que "Agregar al Carrito" */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar efecto de elevación */
+}
+
+  
+.navbar-nav.ml-auto {
+    display: flex;
+    align-items: center;
+}
+.card-price {
+    font-weight: bold;
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+    background: linear-gradient(to right, #000, #161616); /* Degradado de negro a gris oscuro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #565656;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: white;
+}
+
+/* Cambiar el color de los íconos para mayor visibilidad */
+.navbar-nav .nav-link i {
+    color: #4b8eda; /* Azul claro para los íconos */
+}
+
+/* Cambiar el color de las barras del botón del menú sándwich */
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%234b8eda' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Estilo para el texto y los íconos del navbar */
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+/* Estilo para el texto y los íconos del navbar al pasar el mouse */
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-brand:hover {
+    color: #cccccc;
+}
+
+/* Estilo para el footer */
+.footer {
+    background: linear-gradient(to right, #000, #161616); /* Degradado inverso para el footer */
+    color: white;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #4b8eda;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #3772ff; /* Un tono más vibrante de azul al pasar el mouse */
+}
+
+/* Estilo básico para los botones */
+.btn-primary {
+    background-color: #4b8eda; /* Color principal */
+    border: none; /* Sin borde */
+    color: white; /* Texto en blanco */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para efectos */
+}
+
+/* Estilo para los botones al pasar el mouse por encima */
+.btn-primary:hover {
+    background-color: #3772ff; /* Un tono más claro al pasar el mouse */
+    transform: translateY(-3px); /* Mover el botón hacia arriba ligeramente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar efecto de elevación */
+}
+
+/* Estilo para los botones al hacer clic */
+.btn-primary:active {
+    transform: translateY(-1px); /* Mover ligeramente al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra más sutil al hacer clic */
+}
+
+  @media (min-width: 992px) {
+    .btn-filtrar {
+      left: auto;
+      right: 10px;
+      transform: translateX(0);
+    }
+    
+    
+  }

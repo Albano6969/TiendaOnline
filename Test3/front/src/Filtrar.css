@@ -1,0 +1,183 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+/* Estilos para la pista (track) */
+.track {
+    width: 100%;
+    height: 6px;
+    background: #ccc; /* Gris para la parte no seleccionada */
+    position: relative;
+  }
+  
+  
+  .thumb {
+    width: 20px;
+    height: 20px;
+    background: #4b8eda; 
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Sombra opcional */
+  }
+  h2{
+    margin:0 0 30px 0;
+  }
+  /* Estilos para la parte seleccionada de la pista */
+  .track .selected {
+    background: #4b8eda; /* Azul para la parte seleccionada */
+    height: 100%;
+  }
+  
+  
+.menu-filtrar {
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1001;
+    height: auto;
+    animation: abrirFiltrar 0.5s ease forwards;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.menu-filtrar.movil {
+    position: fixed;
+    bottom: 50px; /* Ajusta según la altura de tu botón Filtrar */
+    left: 0;
+    right: 0;
+    width: 100%; /* Cambiado de vuelta a 100% */
+    transform: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 15px; /* Ajusta el padding según necesites */
+    box-sizing: border-box;
+}
+
+.menu-filtrar.escritorio {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto; /* O podrías especificar un ancho máximo si es necesario */
+    max-width: 400px; /* Ajusta este valor según sea necesario */
+    height: auto; /* Altura auto para ajustarse al contenido */
+    max-height: 400px; /* Asegúrate de que no sea más alto que la ventana */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para mejorar la estética */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.mostrar-filtrar .menu-filtrar {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.filtro-opciones {
+    margin-bottom: 20px;
+}
+
+.filtro-opciones label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.filtro-opciones input[type="checkbox"] {
+    margin-right: 10px;
+}
+.precio-valores{
+    margin-top: 20px;
+    font-size: 15pt;
+}
+.filtro-precio {
+    margin-bottom: 20px;
+}
+
+.filtro-precio input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.filtro-precio input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.filtro-precio input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.filtro-precio p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.menu-filtrar button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.menu-filtrar button:hover {
+    background-color: #007bffde;
+}
+
+@keyframes abrirFiltrar {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cerrarFiltrar {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
