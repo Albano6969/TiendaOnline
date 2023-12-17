@@ -11,5 +11,5 @@
 
 Para ejecutar nuestro proyecto Laravel tendremos que: 
 
-1 Ejecuta `composer install` para instalar las dependencias de PHP.
-2 Ejecuta `php artisan serve --port=8888` para iniciar el servidor de Laravel en el puerto 8888.
+1. Ejecuta `composer install` para instalar las dependencias de PHP.
+2. Ejecuta `php artisan serve --port=8888` para iniciar el servidor de Laravel en el puerto 8888.
