@@ -2,7 +2,7 @@ Este proyecto es una tienda electrónica que muestra productos y permite aplicar
 ## Estructura de Carpetas
 
 - En la carpeta Test1 encontraremos un diseño basico de HTML y CSS.
-- En la carpeta Test2 tendremos dos carpetas Back(Laravel) y Front(React).
+- En la carpeta Test3 tendremos dos carpetas Back(Laravel) y Front(React).
 
 ## Requisitos
 
